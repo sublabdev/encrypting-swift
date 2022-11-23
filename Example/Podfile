@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'EncryptingSwift_Example' do
+  pod 'EncryptingSwift', :path => '../'
+
+  target 'EncryptingSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1678399A38925429374D67B1062C9856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2969EDF632FFEC77D81336509C0161E2 /* Pods-EncryptingSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BE4FC8B3147DB85A8D3633E045D95B /* Pods-EncryptingSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ABA69E8B151F983B270B1F6AE8A68B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3FF2890B71A71BE851CD739DAD623575 /* Pods-EncryptingSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1002B088845C2032DB16239DCCCE14 /* Pods-EncryptingSwift_Tests-dummy.m */; };
+		702480981EB9CC9511F06997B34C32BF /* Pods-EncryptingSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA730DDDDFEBDD0680D24D652172CAE /* Pods-EncryptingSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		828075C3DA035E5DB23A91616F50066F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83DF9580FADD5AE59E7597B46310B5EB /* EncryptingSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1D5117F678278DCD4BA08875CEDF34 /* EncryptingSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1AD7A466DBBB0210615D0DF2E3A1C2D /* Pods-EncryptingSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 956FCF4CB32D4307C16527E1D596D202 /* Pods-EncryptingSwift_Example-dummy.m */; };
+		D992050EB239175B1ECFDBB37F7652BE /* EncryptingSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DCD5E2FD2A35E77E8D9E94F4E274A4 /* EncryptingSwift-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E38A128196B85866196D4D9C4C391A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8E2C19C740C2E931E67636B508B907A;
+			remoteInfo = EncryptingSwift;
+		};
+		F210FECA723C0C11217912A4211B2C9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C53B7F19AA87738F64B8FCD99442A0A7;
+			remoteInfo = "Pods-EncryptingSwift_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0152DFACF34857E8F7CE9FC2667B1D62 /* EncryptingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EncryptingSwift.release.xcconfig; sourceTree = "<group>"; };
+		02911E299E6B6C3965E8297DDCE756DC /* Pods-EncryptingSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptingSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		09ECB651F5D53F745925E67C48523D13 /* Pods-EncryptingSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptingSwift_Example.modulemap"; sourceTree = "<group>"; };
+		15B801858FA693C415DEB99C207A1E31 /* Pods-EncryptingSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptingSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A1002B088845C2032DB16239DCCCE14 /* Pods-EncryptingSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptingSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		1EEDC95592ACEADC38A5FFF9040FEB1C /* Pods-EncryptingSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptingSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		23081734FD79887B7ADC952A2E90B853 /* Pods-EncryptingSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptingSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		25CE19F422F9E78641085E26413DEF8F /* EncryptingSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EncryptingSwift-prefix.pch"; sourceTree = "<group>"; };
+		26FD6706C983DAA377BC78CB2259FC64 /* EncryptingSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EncryptingSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		336F7852FFA4BC93062B954FC55790ED /* Pods-EncryptingSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptingSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		40CE4962BFAD8E712720537C40A986BD /* Pods-EncryptingSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptingSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		431F0916E2F1B879FFB1F5C6014E2329 /* Pods-EncryptingSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptingSwift_Example-Info.plist"; sourceTree = "<group>"; };
+		5632672740AD02D69E4681E4F59D5D51 /* Pods-EncryptingSwift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EncryptingSwift_Example"; path = Pods_EncryptingSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E4BCF04F60C570A2A7DE2DF84315CC /* EncryptingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EncryptingSwift.debug.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8357BB9950BC1346D57BD9BCDD41BB83 /* Pods-EncryptingSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EncryptingSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91222FC2489280728EE56CC0DDA50C3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		956FCF4CB32D4307C16527E1D596D202 /* Pods-EncryptingSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EncryptingSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADA730DDDDFEBDD0680D24D652172CAE /* Pods-EncryptingSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptingSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B31D8CC54F9A2B71EEF8E11FE755A685 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B850B283A4FBB2295F1FD3BD85342303 /* Pods-EncryptingSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EncryptingSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D4580082204D00242E5C6149126BDEAA /* EncryptingSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EncryptingSwift; path = EncryptingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60232D9DE136899CB85856177E4B8D1 /* EncryptingSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EncryptingSwift-Info.plist"; sourceTree = "<group>"; };
+		D7C64DC3CA9EC384DC81C09FB72F3712 /* Pods-EncryptingSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptingSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D84F740C860FDFC14D7564871BEA8983 /* Pods-EncryptingSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EncryptingSwift_Tests-Info.plist"; sourceTree = "<group>"; };
+		E0DCD5E2FD2A35E77E8D9E94F4E274A4 /* EncryptingSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EncryptingSwift-dummy.m"; sourceTree = "<group>"; };
+		E44C8B56908B1B3584B377E79F9C1C2B /* Pods-EncryptingSwift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-EncryptingSwift_Tests"; path = Pods_EncryptingSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BE4FC8B3147DB85A8D3633E045D95B /* Pods-EncryptingSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EncryptingSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		E7BD418A8F3B3BBDA330155F054AC058 /* EncryptingSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EncryptingSwift.modulemap; sourceTree = "<group>"; };
+		EB804D7F80F55E59B3E86513A66E24FC /* Pods-EncryptingSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EncryptingSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FC1D5117F678278DCD4BA08875CEDF34 /* EncryptingSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EncryptingSwift-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71F128C5C110327C0A1CDEC8D5889F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1678399A38925429374D67B1062C9856 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814C2EA1F212F592DE000C995DA7E378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABA69E8B151F983B270B1F6AE8A68B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE62F48E46FCC5417AE9330CC0CFE045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828075C3DA035E5DB23A91616F50066F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		266E5C8827257F11E72B76AB501762AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7BD418A8F3B3BBDA330155F054AC058 /* EncryptingSwift.modulemap */,
+				E0DCD5E2FD2A35E77E8D9E94F4E274A4 /* EncryptingSwift-dummy.m */,
+				D60232D9DE136899CB85856177E4B8D1 /* EncryptingSwift-Info.plist */,
+				25CE19F422F9E78641085E26413DEF8F /* EncryptingSwift-prefix.pch */,
+				FC1D5117F678278DCD4BA08875CEDF34 /* EncryptingSwift-umbrella.h */,
+				58E4BCF04F60C570A2A7DE2DF84315CC /* EncryptingSwift.debug.xcconfig */,
+				0152DFACF34857E8F7CE9FC2667B1D62 /* EncryptingSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EncryptingSwift";
+			sourceTree = "<group>";
+		};
+		3D9ADB385CDFBC6A8BFB482C10D0718A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7AE713987E0BCBAC5096C303D835C /* Pods-EncryptingSwift_Example */,
+				61F70153DA5D47ACE1341F9ED6E2E2FA /* Pods-EncryptingSwift_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		457BFA722C4D6A3BABE8E66DE9D65DDD /* EncryptingSwift */ = {
+			isa = PBXGroup;
+			children = (
+				50464406E9BC36E14613EB6A70C975E5 /* Pod */,
+				266E5C8827257F11E72B76AB501762AA /* Support Files */,
+			);
+			name = EncryptingSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		50464406E9BC36E14613EB6A70C975E5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				26FD6706C983DAA377BC78CB2259FC64 /* EncryptingSwift.podspec */,
+				B31D8CC54F9A2B71EEF8E11FE755A685 /* LICENSE */,
+				91222FC2489280728EE56CC0DDA50C3D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61F70153DA5D47ACE1341F9ED6E2E2FA /* Pods-EncryptingSwift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				02911E299E6B6C3965E8297DDCE756DC /* Pods-EncryptingSwift_Tests.modulemap */,
+				40CE4962BFAD8E712720537C40A986BD /* Pods-EncryptingSwift_Tests-acknowledgements.markdown */,
+				1EEDC95592ACEADC38A5FFF9040FEB1C /* Pods-EncryptingSwift_Tests-acknowledgements.plist */,
+				1A1002B088845C2032DB16239DCCCE14 /* Pods-EncryptingSwift_Tests-dummy.m */,
+				D84F740C860FDFC14D7564871BEA8983 /* Pods-EncryptingSwift_Tests-Info.plist */,
+				ADA730DDDDFEBDD0680D24D652172CAE /* Pods-EncryptingSwift_Tests-umbrella.h */,
+				15B801858FA693C415DEB99C207A1E31 /* Pods-EncryptingSwift_Tests.debug.xcconfig */,
+				23081734FD79887B7ADC952A2E90B853 /* Pods-EncryptingSwift_Tests.release.xcconfig */,
+			);
+			name = "Pods-EncryptingSwift_Tests";
+			path = "Target Support Files/Pods-EncryptingSwift_Tests";
+			sourceTree = "<group>";
+		};
+		A1A7AE713987E0BCBAC5096C303D835C /* Pods-EncryptingSwift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				09ECB651F5D53F745925E67C48523D13 /* Pods-EncryptingSwift_Example.modulemap */,
+				8357BB9950BC1346D57BD9BCDD41BB83 /* Pods-EncryptingSwift_Example-acknowledgements.markdown */,
+				336F7852FFA4BC93062B954FC55790ED /* Pods-EncryptingSwift_Example-acknowledgements.plist */,
+				956FCF4CB32D4307C16527E1D596D202 /* Pods-EncryptingSwift_Example-dummy.m */,
+				B850B283A4FBB2295F1FD3BD85342303 /* Pods-EncryptingSwift_Example-frameworks.sh */,
+				431F0916E2F1B879FFB1F5C6014E2329 /* Pods-EncryptingSwift_Example-Info.plist */,
+				E4BE4FC8B3147DB85A8D3633E045D95B /* Pods-EncryptingSwift_Example-umbrella.h */,
+				D7C64DC3CA9EC384DC81C09FB72F3712 /* Pods-EncryptingSwift_Example.debug.xcconfig */,
+				EB804D7F80F55E59B3E86513A66E24FC /* Pods-EncryptingSwift_Example.release.xcconfig */,
+			);
+			name = "Pods-EncryptingSwift_Example";
+			path = "Target Support Files/Pods-EncryptingSwift_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E01B8A97057ADCD8A5464AF31C876316 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E43C592612C10AB3B7B31F2AFDE6C603 /* Products */,
+				3D9ADB385CDFBC6A8BFB482C10D0718A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E01B8A97057ADCD8A5464AF31C876316 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457BFA722C4D6A3BABE8E66DE9D65DDD /* EncryptingSwift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E43C592612C10AB3B7B31F2AFDE6C603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4580082204D00242E5C6149126BDEAA /* EncryptingSwift */,
+				5632672740AD02D69E4681E4F59D5D51 /* Pods-EncryptingSwift_Example */,
+				E44C8B56908B1B3584B377E79F9C1C2B /* Pods-EncryptingSwift_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3672855CB0FD9BBB79F872B5C7D948F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2969EDF632FFEC77D81336509C0161E2 /* Pods-EncryptingSwift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8D3BD9A96F378A8A30C6CAE43F8A1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702480981EB9CC9511F06997B34C32BF /* Pods-EncryptingSwift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		464F704990BF3DA9803F792703EE3040 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DF9580FADD5AE59E7597B46310B5EB /* EncryptingSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6592F9E7FB4817424044FD00A6122683 /* Pods-EncryptingSwift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A24C583C70148173B556E97DBFBB24B /* Build configuration list for PBXNativeTarget "Pods-EncryptingSwift_Tests" */;
+			buildPhases = (
+				3B8D3BD9A96F378A8A30C6CAE43F8A1D /* Headers */,
+				CD2CCCE77336B1EE65F1514C575CC76A /* Sources */,
+				EE62F48E46FCC5417AE9330CC0CFE045 /* Frameworks */,
+				9ED967380D9214FB8B2CA1346BFA3BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD526ACAA02609D99685A17078802C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-EncryptingSwift_Tests";
+			productName = Pods_EncryptingSwift_Tests;
+			productReference = E44C8B56908B1B3584B377E79F9C1C2B /* Pods-EncryptingSwift_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C53B7F19AA87738F64B8FCD99442A0A7 /* Pods-EncryptingSwift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5C484539DABD1F0A4915D67AA81B63 /* Build configuration list for PBXNativeTarget "Pods-EncryptingSwift_Example" */;
+			buildPhases = (
+				3672855CB0FD9BBB79F872B5C7D948F2 /* Headers */,
+				163A991346690F5973E9136EC42AF33F /* Sources */,
+				814C2EA1F212F592DE000C995DA7E378 /* Frameworks */,
+				241C8FB5429BB2D57CB2892756B3AD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F5F370B525353A67787F0A3508EB62B /* PBXTargetDependency */,
+			);
+			name = "Pods-EncryptingSwift_Example";
+			productName = Pods_EncryptingSwift_Example;
+			productReference = 5632672740AD02D69E4681E4F59D5D51 /* Pods-EncryptingSwift_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8E2C19C740C2E931E67636B508B907A /* EncryptingSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E143C0C1B622889ACB2532D5BE5A18B /* Build configuration list for PBXNativeTarget "EncryptingSwift" */;
+			buildPhases = (
+				464F704990BF3DA9803F792703EE3040 /* Headers */,
+				E88F20B9733FEFBB5F104F1EFC7BDF02 /* Sources */,
+				71F128C5C110327C0A1CDEC8D5889F3C /* Frameworks */,
+				A7BD989CDCD605755ED38B160700144C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncryptingSwift;
+			productName = EncryptingSwift;
+			productReference = D4580082204D00242E5C6149126BDEAA /* EncryptingSwift */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E43C592612C10AB3B7B31F2AFDE6C603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E2C19C740C2E931E67636B508B907A /* EncryptingSwift */,
+				C53B7F19AA87738F64B8FCD99442A0A7 /* Pods-EncryptingSwift_Example */,
+				6592F9E7FB4817424044FD00A6122683 /* Pods-EncryptingSwift_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		241C8FB5429BB2D57CB2892756B3AD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED967380D9214FB8B2CA1346BFA3BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BD989CDCD605755ED38B160700144C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163A991346690F5973E9136EC42AF33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AD7A466DBBB0210615D0DF2E3A1C2D /* Pods-EncryptingSwift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2CCCE77336B1EE65F1514C575CC76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF2890B71A71BE851CD739DAD623575 /* Pods-EncryptingSwift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88F20B9733FEFBB5F104F1EFC7BDF02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D992050EB239175B1ECFDBB37F7652BE /* EncryptingSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F5F370B525353A67787F0A3508EB62B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EncryptingSwift;
+			target = D8E2C19C740C2E931E67636B508B907A /* EncryptingSwift */;
+			targetProxy = E38A128196B85866196D4D9C4C391A71 /* PBXContainerItemProxy */;
+		};
+		CAD526ACAA02609D99685A17078802C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EncryptingSwift_Example";
+			target = C53B7F19AA87738F64B8FCD99442A0A7 /* Pods-EncryptingSwift_Example */;
+			targetProxy = F210FECA723C0C11217912A4211B2C9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16D981F4058D5597EF0257C2B6F1C645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0152DFACF34857E8F7CE9FC2667B1D62 /* EncryptingSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EncryptingSwift/EncryptingSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EncryptingSwift/EncryptingSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EncryptingSwift/EncryptingSwift.modulemap";
+				PRODUCT_MODULE_NAME = EncryptingSwift;
+				PRODUCT_NAME = EncryptingSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C6A3B47AF89B4A5C816BA410E0D4B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C64DC3CA9EC384DC81C09FB72F3712 /* Pods-EncryptingSwift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B7E7C1F4037F371CCE35035CE0F99ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B801858FA693C415DEB99C207A1E31 /* Pods-EncryptingSwift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptingSwift_Tests/Pods-EncryptingSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptingSwift_Tests/Pods-EncryptingSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF37439C81E6358B894D3FD552BC9302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB804D7F80F55E59B3E86513A66E24FC /* Pods-EncryptingSwift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D6405AD81A4A7480A3DA1C3835D36A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E4BCF04F60C570A2A7DE2DF84315CC /* EncryptingSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EncryptingSwift/EncryptingSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EncryptingSwift/EncryptingSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EncryptingSwift/EncryptingSwift.modulemap";
+				PRODUCT_MODULE_NAME = EncryptingSwift;
+				PRODUCT_NAME = EncryptingSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAC0D030337D9F2DFD3C9E3E533B3EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23081734FD79887B7ADC952A2E90B853 /* Pods-EncryptingSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EncryptingSwift_Tests/Pods-EncryptingSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EncryptingSwift_Tests/Pods-EncryptingSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C5C484539DABD1F0A4915D67AA81B63 /* Build configuration list for PBXNativeTarget "Pods-EncryptingSwift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6A3B47AF89B4A5C816BA410E0D4B38 /* Debug */,
+				BF37439C81E6358B894D3FD552BC9302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E143C0C1B622889ACB2532D5BE5A18B /* Build configuration list for PBXNativeTarget "EncryptingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6405AD81A4A7480A3DA1C3835D36A15 /* Debug */,
+				16D981F4058D5597EF0257C2B6F1C645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A24C583C70148173B556E97DBFBB24B /* Build configuration list for PBXNativeTarget "Pods-EncryptingSwift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E7C1F4037F371CCE35035CE0F99ACD /* Debug */,
+				FAC0D030337D9F2DFD3C9E3E533B3EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
