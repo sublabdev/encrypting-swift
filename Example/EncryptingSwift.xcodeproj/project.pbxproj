@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11093FB7292E81CB009E3BCC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11093FB6292E81CB009E3BCC /* Constants.swift */; };
+		11093FB9292EB590009E3BCC /* TestEcdsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11093FB8292EB590009E3BCC /* TestEcdsa.swift */; };
+		119E9C6029320FE5006F53C2 /* TestSr25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E9C5F29320FE5006F53C2 /* TestSr25519.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* TestEd25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* TestEd25519.swift */; };
 		97139669110D25B4BB60CF99 /* Pods_EncryptingSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95175FCFD8373A2CDC99445F /* Pods_EncryptingSwift_Tests.framework */; };
 		F345221A1BFE424708C6038D /* Pods_EncryptingSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBCA87C917AFC7169062A24 /* Pods_EncryptingSwift_Example.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		019478F27B267D30D8C86BEB /* Pods-EncryptingSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptingSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-EncryptingSwift_Tests/Pods-EncryptingSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		11093FB6292E81CB009E3BCC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11093FB8292EB590009E3BCC /* TestEcdsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEcdsa.swift; sourceTree = "<group>"; };
+		119E9C5F29320FE5006F53C2 /* TestSr25519.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSr25519.swift; sourceTree = "<group>"; };
 		2FE61B2021BB18D316FCE1ED /* Pods-EncryptingSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptingSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* EncryptingSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptingSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,7 +45,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* EncryptingSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptingSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* TestEd25519.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEd25519.swift; sourceTree = "<group>"; };
 		70D62E92938CBC469DE01DF8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8A21FBD8D19A2BB6B9C032EE /* Pods-EncryptingSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptingSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9346A0C8041F2B0B785225C8 /* EncryptingSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EncryptingSwift.podspec; path = ../EncryptingSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -69,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11093FB5292E81AB009E3BCC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				11093FB6292E81CB009E3BCC /* Constants.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +129,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				11093FB5292E81AB009E3BCC /* Support */,
+				607FACEB1AFB9204008FA782 /* TestEd25519.swift */,
+				11093FB8292EB590009E3BCC /* TestEcdsa.swift */,
+				119E9C5F29320FE5006F53C2 /* TestSr25519.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -291,11 +308,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EncryptingSwift_Example/Pods-EncryptingSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/EncryptingSwift/EncryptingSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Sr25519/Sr25519.framework",
+				"${BUILT_PRODUCTS_DIR}/UncommonCrypto/UncommonCrypto.framework",
+				"${BUILT_PRODUCTS_DIR}/ed25519swift/ed25519swift.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EncryptingSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sr25519.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UncommonCrypto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ed25519swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -340,7 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* TestEd25519.swift in Sources */,
+				11093FB9292EB590009E3BCC /* TestEcdsa.swift in Sources */,
+				11093FB7292E81CB009E3BCC /* Constants.swift in Sources */,
+				119E9C6029320FE5006F53C2 /* TestSr25519.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

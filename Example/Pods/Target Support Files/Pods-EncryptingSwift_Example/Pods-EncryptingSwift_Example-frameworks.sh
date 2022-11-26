@@ -176,10 +176,22 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EncryptingSwift/EncryptingSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Sr25519/Sr25519.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UncommonCrypto/UncommonCrypto.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ed25519swift/ed25519swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CommonSwift/CommonSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EncryptingSwift/EncryptingSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Sr25519/Sr25519.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UncommonCrypto/UncommonCrypto.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ed25519swift/ed25519swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
