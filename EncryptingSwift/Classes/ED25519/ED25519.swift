@@ -8,7 +8,7 @@ class ED25519: SignatureEngine {
         self.data = data
     }
     
-    func createPrivateKey() -> Data {
+    func loadPrivateKey() throws -> Data {
         data
     }
     
@@ -16,16 +16,12 @@ class ED25519: SignatureEngine {
         Data(Ed25519.calcPublicKey(secretKey: data.bytes))
     }
     
-    func sign(privateKey: Data) throws -> Data {
-        Data(Ed25519.sign(message: data.bytes, secretKey: privateKey.bytes))
+    func sign(message: Data) throws -> Data {
+        Data(Ed25519.sign(message: message.bytes, secretKey: data.bytes))
     }
     
-    func verify(signature: Data, publicKey: Data) -> Bool {
-        Ed25519.verify(signature: Array(signature), message: data.bytes, publicKey: publicKey.bytes)
-    }
-    
-    func isValidKeyPair(publicKey: Data, secretKey: Data) throws -> Bool {
-        Ed25519.isValidKeyPair(publicKey: publicKey.bytes, secretKey: secretKey.bytes)
+    func verify(message: Data, signature: Data) throws -> Bool {
+        Ed25519.verify(signature: signature.bytes, message: message.bytes, publicKey: data.bytes)
     }
 }
 

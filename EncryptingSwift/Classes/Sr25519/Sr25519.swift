@@ -1,27 +1,37 @@
 import Foundation
 import Sr25519
 
-class Sr25519: SignatureKeyPairEngine {
+class SR25519: SignatureEngine {
     private let data: Data
 
     init(data: Data) {
         self.data = data
     }
     
-    func keyPair(seed: Data) throws -> KeyPair {
-        let keypair = try Sr25519KeyPair(seed: .init(raw: seed))
-        let sign = keypair.sign(message: data).raw
-        return KeyPair(signature: sign, publicKey: keypair.publicKey.raw)
+    private func keyPair() throws -> Sr25519.Sr25519KeyPair {
+        try Sr25519.Sr25519KeyPair(seed: .init(raw: data))
     }
     
-    func verify(signature: Data, publicKey: Data) throws -> Bool {
-        try Sr25519PublicKey(raw: publicKey)
-            .verify(message: data, signature: Sr25519Signature(raw: signature))
+    func loadPrivateKey() throws -> Data {
+        data
+    }
+    
+    func publicKey() throws -> Data {
+        try keyPair().publicKey.raw
+    }
+    
+    func verify(message: Data, signature: Data) throws -> Bool {
+        try Sr25519PublicKey(raw: data)
+            .verify(message: message, signature: Sr25519Signature(raw: signature))
+    }
+    
+    func sign(message: Data) throws -> Data {
+        try keyPair().sign(message: message).raw
     }
 }
 
 extension Data {
-    public var sr25519: SignatureKeyPairEngine {
-        Sr25519(data: self)
+    public var sr25519: SignatureEngine {
+        SR25519(data: self)
     }
 }

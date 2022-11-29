@@ -24,7 +24,7 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Keys
-    func createPrivateKey() -> Data {
+    func loadPrivateKey() throws -> Data {
         data
     }
     
@@ -43,17 +43,17 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Signing
-    func sign(privateKey: Data) throws -> Data {
+    func sign(message: Data) throws -> Data {
         let signature = UnsafeMutablePointer<secp256k1_ecdsa_recoverable_signature>.allocate(capacity: 1)
         
-        try data.withUnsafeBytes {
+        try message.withUnsafeBytes {
             guard $0.count == 32 else {
                 throw Error.invalidMessage
             }
             
             let messagePointer = $0.bufferPointer
             
-            try privateKey.withUnsafeBytes {
+            try data.withUnsafeBytes {
                 guard $0.count == 32 else {
                     throw Error.invalidSecretKey
                 }
@@ -78,7 +78,7 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Verification
-    func verify(signature: Data, publicKey: Data) throws -> Bool {
+    func verify(message: Data, signature: Data) throws -> Bool {
         let sig = UnsafeMutablePointer<secp256k1_ecdsa_signature>.allocate(capacity: 1)
         
         guard signature.withUnsafeBytes({
@@ -94,7 +94,7 @@ class Ecdsa: SignatureEngine {
         
         let pubkey = UnsafeMutablePointer<secp256k1_pubkey>.allocate(capacity: 1)
         
-        guard publicKey.withUnsafeBytes({
+        guard data.withUnsafeBytes({
             guard !$0.isEmpty else {
                 return false
             }
@@ -105,7 +105,7 @@ class Ecdsa: SignatureEngine {
            return false
         }
         
-        return data.withUnsafeBytes {
+        return message.withUnsafeBytes {
             guard $0.count == 32 else {
                 return false
             }
