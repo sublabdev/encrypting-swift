@@ -1,6 +1,7 @@
 import Foundation
 import secp256k1
 
+/// Handles ECDSA encryption
 class Ecdsa: SignatureEngine {
     enum Error: Swift.Error {
         case invalidSecretKey
@@ -18,16 +19,24 @@ class Ecdsa: SignatureEngine {
     private let data: Data
     private let context: OpaquePointer
     
+    /// Creates Ecdsa encryption handler
+    /// - Parameters:
+    ///     - data: The data to encrypt (the seed)
+    ///     - flags: The falgs for creating a secp256k1 context (the default values are: `.sign` and `.verify`
     init(data: Data, flags: Flags = [.sign, .verify]) {
         self.data = data
         context = secp256k1_context_create(UInt32(flags.rawValue))
     }
     
     // MARK: - Keys
+    /// Loads the private key for ECDSA
+    /// - Returns: The private key
     func loadPrivateKey() throws -> Data {
         data
     }
     
+    /// Generates a public key for ECDSA
+    /// - Returns: A created public key
     func publicKey() throws -> Data {
         let pubkey = UnsafeMutablePointer<secp256k1_pubkey>.allocate(capacity: 1)
         try data.withUnsafeBytes {
@@ -43,6 +52,10 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Signing
+    /// The default signing implementation for ECDSA
+    /// - Parameters:
+    ///     - message: The message that needs to be signed
+    /// - Returns: The signature
     func sign(message: Data) throws -> Data {
         let signature = UnsafeMutablePointer<secp256k1_ecdsa_recoverable_signature>.allocate(capacity: 1)
         
@@ -78,6 +91,11 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Verification
+    /// Verifies the provided message and signature against ECDSA
+    /// - Parameters:
+    ///     - message: The message
+    ///     - signature: 64 bytes signature
+    /// - Returns: A Bool value indicating whether the verification was successful or not
     func verify(message: Data, signature: Data) throws -> Bool {
         let sig = UnsafeMutablePointer<secp256k1_ecdsa_signature>.allocate(capacity: 1)
         
@@ -115,6 +133,7 @@ class Ecdsa: SignatureEngine {
     }
     
     // MARK: - Private
+    // Handles the public key serialization
     private func serialize(publicKey pubkey: UnsafePointer<secp256k1_pubkey>) -> Data {
         var size = 33
         var data = Data(count: size)
@@ -127,6 +146,7 @@ class Ecdsa: SignatureEngine {
         return data
     }
     
+    // Handles the signature serialization
     private func serialize(recoverableSignature sig: UnsafePointer<secp256k1_ecdsa_recoverable_signature>) -> Data {
         var signature = Data(count: 64)
         var recoveryId: Int32 = -1
@@ -140,6 +160,7 @@ class Ecdsa: SignatureEngine {
 
 // MARK: - Extension
 extension Data {
+    /// An access point to ECDSA functionality
     public var ecdsa: SignatureEngine {
         Ecdsa(data: self)
     }

@@ -65,7 +65,6 @@
 		3628DF5AB7CC4A7144B8495FFF58331E /* ed25519-donna-64bit-sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = A636BF86AD8D389F36F060750158B191 /* ed25519-donna-64bit-sse2.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		365EB000450CE1E718EE3E1CE54CC545 /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AB352863FC7E51D23F2D14B03CD7C /* ZeroPadding.swift */; };
 		36967B3D7E2D45156106075F7C584382 /* Sr25519-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C47E4B8855B3F8C2DB1CBB495880DDFF /* Sr25519-dummy.m */; };
-		37639524F2D153BD91B3097E9363BF38 /* SignatureKeyPairEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1B34AC4E6A8EDE6F25318FC20C4D4 /* SignatureKeyPairEngine.swift */; };
 		397282F720A56BADC01177FF1945D4A0 /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 823E46AC3F29762AFF30ED88F4997B6F /* scalar_impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C65EFBB31528AF2D113523B3D58A1FD /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0039F0C06C943B33633AE38B360192E6 /* Random.swift */; };
 		3C9380D754F7743DCAAC93D39306C0B7 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4614527E3EB8DB73B448150448AF /* RSA.swift */; };
@@ -420,7 +419,6 @@
 		09415A2593E1538ED11482F574616833 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		09ECB651F5D53F745925E67C48523D13 /* Pods-EncryptingSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EncryptingSwift_Example.modulemap"; sourceTree = "<group>"; };
 		0BBFD56F17E652C71B2411C3C8A392D0 /* scratch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scratch.h; path = secp256k1/Classes/secp256k1/src/scratch.h; sourceTree = "<group>"; };
-		0BC1B34AC4E6A8EDE6F25318FC20C4D4 /* SignatureKeyPairEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignatureKeyPairEngine.swift; sourceTree = "<group>"; };
 		0C89BEF610735F73A2282D61A8055E87 /* Prime Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Prime Test.swift"; path = "Sources/CryptoSwift/CS_BigInt/Prime Test.swift"; sourceTree = "<group>"; };
 		0E27EA1789ED56E06441CB4271B84FE6 /* HKDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HKDF.swift; path = Sources/CryptoSwift/HKDF.swift; sourceTree = "<group>"; };
 		0E5B4D3F3F18C0BC7A05B32CA68F4951 /* ecmult_gen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_gen.h; path = secp256k1/Classes/secp256k1/src/ecmult_gen.h; sourceTree = "<group>"; };
@@ -1163,7 +1161,6 @@
 			isa = PBXGroup;
 			children = (
 				5F032EAE62A8102F91D6C697703F4B60 /* SignatureEngine.swift */,
-				0BC1B34AC4E6A8EDE6F25318FC20C4D4 /* SignatureKeyPairEngine.swift */,
 				A0A213205BEC0A8AFAD9AB79EB7DB2C2 /* Signer.swift */,
 				515979D239CC5AC86880B9AC9669016D /* Verifier.swift */,
 			);
@@ -1937,7 +1934,6 @@
 				0EEEB85F14875B917C573412E7C4C41B /* EncryptingSwift-dummy.m in Sources */,
 				653331F23735316F7ABDA282F21BC828 /* KeyPair.swift in Sources */,
 				231D4E706FF9D58CAC2542F8AFDB1FB2 /* SignatureEngine.swift in Sources */,
-				37639524F2D153BD91B3097E9363BF38 /* SignatureKeyPairEngine.swift in Sources */,
 				D89C73F58C086CF0B0121F1255D0E0A6 /* Signer.swift in Sources */,
 				CBAD661368B85002E6A143E9CAA62A1F /* Sr25519.swift in Sources */,
 				041B2AC140FD4E0CB5CB8DB4D2768581 /* UnsafeMutableRawBufferPointer+BufferPointer.swift in Sources */,
