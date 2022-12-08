@@ -17,5 +17,10 @@
   "platforms": {
     "ios": "13.0"
   },
-  "source_files": "CommonSwift/Classes/**/*"
+  "source_files": "CommonSwift/Classes/**/*",
+  "dependencies": {
+    "BigInt": [
+
+    ]
+  }
 }
