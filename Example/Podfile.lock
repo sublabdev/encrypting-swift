@@ -23,7 +23,7 @@ PODS:
   - UncommonCrypto (0.1.3)
 
 DEPENDENCIES:
-  - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, commit `5bdbe0884ebbdaa8bec9b2f73133764c489d180f`)
+  - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, commit `fd97ff6ef1adc54be966e7d2e125127c979af68b`)
   - ed25519swift
   - EncryptingSwift (from `../`)
   - Sr25519
@@ -39,14 +39,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   CommonSwift:
-    :commit: 5bdbe0884ebbdaa8bec9b2f73133764c489d180f
+    :commit: fd97ff6ef1adc54be966e7d2e125127c979af68b
     :git: https://github.com/sublabdev/common-swift.git
   EncryptingSwift:
     :path: "../"
 
 CHECKOUT OPTIONS:
   CommonSwift:
-    :commit: 5bdbe0884ebbdaa8bec9b2f73133764c489d180f
+    :commit: fd97ff6ef1adc54be966e7d2e125127c979af68b
     :git: https://github.com/sublabdev/common-swift.git
 
 SPEC CHECKSUMS:
@@ -59,6 +59,6 @@ SPEC CHECKSUMS:
   Sr25519: 87a974e2d714113af55e1d7e5cef1b82864a57bd
   UncommonCrypto: 8e6276bd3def28cdbd55966926c38c37ea1c9af5
 
-PODFILE CHECKSUM: 3ec45f0f4f4278477bf020403be8b403a974d8b0
+PODFILE CHECKSUM: 51e55d96a7f6ed70f1cf65155d439f3dc804ad51
 
 COCOAPODS: 1.11.3
