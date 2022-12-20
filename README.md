@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod 'EncryptingSwift'
 ```
 
+## Usage Examples
+
+Usage examples can be found in the bellow links:
+
+- [Ed25519](https://github.com/sublabdev/encrypting-swift/blob/dev/Doc/Ed25519.md)
+- [Ecdsa](https://github.com/sublabdev/encrypting-swift/blob/dev/Doc/Ecdsa.md)
+- [Sr25519](https://github.com/sublabdev/encrypting-swift/blob/dev/Doc/Sr25519.md)
+
 ## Author
 
 TigranIsk, tiskandaryan@griddynamics.com
