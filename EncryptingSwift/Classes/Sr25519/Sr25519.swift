@@ -8,7 +8,7 @@ class SR25519: SignatureEngine {
     /// Creates SR25519 encryption handler
     /// - Parameters:
     ///     - data: The data to encrypt (the seed)
-    init(data: Data) {
+    fileprivate init(data: Data) {
         self.data = data
     }
     

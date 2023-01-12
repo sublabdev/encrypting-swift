@@ -7,7 +7,7 @@ open class KeyPairFactory {
     /// - Parameters:
     ///     - seed: The seed data which is used to generate a `KeyPair` object
     /// - Returns: `KeyPair` object with private and public keys as well as with an interface that provides a signature engine, message signing and signature (and message) verification interfaces.
-    open func load(seed: Data) throws -> KeyPair {
+    open func load(seedOrPrivateKey: Data) throws -> KeyPair {
         fatalError("Not implemented")
     }
 }

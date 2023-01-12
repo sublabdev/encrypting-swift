@@ -1,5 +1,8 @@
 import Foundation
+import HashingSwift
 import secp256k1
+
+private typealias Hasher = (Data) throws -> Data
 
 /// Handles ECDSA encryption
 class Ecdsa: SignatureEngine {
@@ -9,23 +12,27 @@ class Ecdsa: SignatureEngine {
         case signingFailed
     }
     
-    struct Flags: OptionSet {
+    struct Flag: OptionSet {
         let rawValue: Int32
-        static let none = Flags(rawValue: SECP256K1_CONTEXT_NONE)
-        static let sign = Flags(rawValue: SECP256K1_CONTEXT_SIGN)
-        static let verify = Flags(rawValue: SECP256K1_CONTEXT_VERIFY)
+        static let none = Flag(rawValue: SECP256K1_CONTEXT_NONE)
+        static let sign = Flag(rawValue: SECP256K1_CONTEXT_SIGN)
+        static let verify = Flag(rawValue: SECP256K1_CONTEXT_VERIFY)
+        
+        static let `default`: Flag = [.sign, .verify]
     }
     
     private let data: Data
+    private let hasher: Hasher
     private let context: OpaquePointer
     
     /// Creates Ecdsa encryption handler
     /// - Parameters:
     ///     - data: The data to encrypt (the seed)
     ///     - flags: The falgs for creating a secp256k1 context (the default values are: `.sign` and `.verify`
-    init(data: Data, flags: Flags = [.sign, .verify]) {
+    fileprivate init(data: Data, hasher: @escaping Hasher) {
         self.data = data
-        context = secp256k1_context_create(UInt32(flags.rawValue))
+        self.hasher = hasher
+        context = secp256k1_context_create(UInt32(Flag.default.rawValue))
     }
     
     // MARK: - Keys
@@ -59,7 +66,7 @@ class Ecdsa: SignatureEngine {
     func sign(message: Data) throws -> Data {
         let signature = UnsafeMutablePointer<secp256k1_ecdsa_recoverable_signature>.allocate(capacity: 1)
         
-        try message.withUnsafeBytes {
+        try hasher(message).withUnsafeBytes {
             guard $0.count == 32 else {
                 throw Error.invalidMessage
             }
@@ -123,7 +130,7 @@ class Ecdsa: SignatureEngine {
            return false
         }
         
-        return message.withUnsafeBytes {
+        return try hasher(message).withUnsafeBytes {
             guard $0.count == 32 else {
                 return false
             }
@@ -159,9 +166,19 @@ class Ecdsa: SignatureEngine {
 }
 
 // MARK: - Extension
+
 extension Data {
     /// An access point to ECDSA functionality
-    public var ecdsa: SignatureEngine {
-        Ecdsa(data: self)
+    public func ecdsa(kind: EcdsaKind) -> SignatureEngine {
+        Ecdsa(data: self) { try hashData($0, kind: kind) }
+    }
+}
+
+private func hashData(_ data: Data, kind: EcdsaKind) throws -> Data {
+    switch kind {
+    case .substrate:
+        return try data.hashing.blake2b_256()
+    case .ethereum:
+        return try data.hashing.keccak256()
     }
 }
