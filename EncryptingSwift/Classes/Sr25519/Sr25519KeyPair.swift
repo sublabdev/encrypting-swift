@@ -18,6 +18,8 @@ struct Sr25519KeyPair: KeyPair {
 
 // A factory object for Sr25519 key pair
 final class SR25519KeyPairFactory: KeyPairFactory {
+    override var seedFactory: SeedFactory { SubstrateSeedFactory() }
+    
     override func load(seedOrPrivateKey: Data) throws -> KeyPair {
         let privateKey = try seedOrPrivateKey.sr25519.loadPrivateKey()
         return try Sr25519KeyPair(privateKey: privateKey, publicKey: privateKey.sr25519.publicKey())

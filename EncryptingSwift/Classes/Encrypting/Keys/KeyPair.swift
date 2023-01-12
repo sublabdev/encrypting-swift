@@ -1,5 +1,7 @@
 import Foundation
 
+public let defaultWordCount = 12
+
 /// A factory for creating a `KeyPair` object
 open class KeyPairFactory {
     /// Loads seed to create a `KeyPair`.
@@ -9,6 +11,29 @@ open class KeyPairFactory {
     /// - Returns: `KeyPair` object with private and public keys as well as with an interface that provides a signature engine, message signing and signature (and message) verification interfaces.
     open func load(seedOrPrivateKey: Data) throws -> KeyPair {
         fatalError("Not implemented")
+    }
+    
+    var seedFactory: SeedFactory {
+        fatalError("Not implemented")
+    }
+    
+    public func generate(wordCount: Int = defaultWordCount, passphrase: String = "") throws -> KeyPair {
+        try generate(
+            from: DefaultMnemonicProvider(seedFactory: seedFactory).make(wordCount: wordCount),
+            passphrase: passphrase
+        )
+    }
+    
+    public func generate(from mnemonic: Mnemonic, passphrase: String = "") throws -> KeyPair {
+        try load(seedOrPrivateKey: mnemonic.toSeed(passphrase: passphrase))
+    }
+    
+    public func generate(phrase: String, passphrase: String = "") throws -> KeyPair {
+        try generate(from: DefaultMnemonic.from(phrase: phrase), passphrase: passphrase)
+    }
+    
+    public func generate(words: [String], passphrase: String = "") throws -> KeyPair {
+        try generate(from: DefaultMnemonic.from(words: words), passphrase: passphrase)
     }
 }
 
@@ -34,6 +59,7 @@ extension KeyPair {
     public func sign(message: Data) throws -> Data {
         try signatureEngine(for: privateKey).sign(message: message)
     }
+    
     // The default verification implementation
     /// - Parameters:
     ///     - message: The message

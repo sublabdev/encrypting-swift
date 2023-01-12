@@ -20,6 +20,8 @@ struct EcdsaKeyPair: KeyPair {
 
 // A factory object for ECDSA key pair
 final class EcdsaKeyPairFactory: KeyPairFactory {
+    override var seedFactory: SeedFactory { SubstrateSeedFactory() }
+    
     private let kind: EcdsaKind
     init(kind: EcdsaKind) {
         self.kind = kind

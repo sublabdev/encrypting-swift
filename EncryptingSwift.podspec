@@ -13,11 +13,15 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/sublabdev/encrypting-swift.git', :tag => s.version.to_s }
     s.ios.deployment_target = '13.0'
     s.source_files = 'EncryptingSwift/Classes/**/*'
-    s.dependency 'HashingSwift'
-    s.dependency 'secp256k1.swift'
+    
+    s.dependency 'CommonSwift', '~> 1.0.0'
+    s.dependency 'HashingSwift', '~> 1.0.0'
+    
+    s.dependency 'secp256k1.swift', '~> 0.1.4'
     s.dependency 'ed25519swift', '~> 1.2.8'
-    s.dependency 'CommonSwift'
     s.dependency 'Sr25519', '~> 0.1.3'
-    s.dependency 'MnemonicKit', '1.3.9'
+#    s.dependency 'MnemonicSwift', '2.2.4'
+    s.dependency 'Bip39.swift', '~> 0.1.1'
+    s.dependency 'UncommonCrypto', '~> 0.1.3'
     
 end
