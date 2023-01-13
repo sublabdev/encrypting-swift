@@ -9,6 +9,7 @@ private let wordCountToStrength: [Int: Int] = [
     24: 256
 ]
 
+/// Default mnemonic provider
 public final class DefaultMnemonicProvider: MnemonicProvider {
     enum Error: Swift.Error {
         case invalidWordCount

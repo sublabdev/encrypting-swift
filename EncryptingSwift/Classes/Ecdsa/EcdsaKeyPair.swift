@@ -1,6 +1,6 @@
 import Foundation
 
-// ECDSA implementation of KeyPair protocol
+/// ECDSA implementation of KeyPair protocol
 struct EcdsaKeyPair: KeyPair {
     let privateKey: Data
     let publicKey: Data
@@ -12,17 +12,18 @@ struct EcdsaKeyPair: KeyPair {
         self.kind = kind
     }
     
-    // Returns the SignatureEngine for ECDSA
+    /// Returns the SignatureEngine for ECDSA
     func signatureEngine(for data: Data) -> SignatureEngine {
         data.ecdsa(kind: kind)
     }
 }
 
-// A factory object for ECDSA key pair
+/// A factory object for ECDSA key pair
 final class EcdsaKeyPairFactory: KeyPairFactory {
     override var seedFactory: SeedFactory { SubstrateSeedFactory() }
     
     private let kind: EcdsaKind
+    
     init(kind: EcdsaKind) {
         self.kind = kind
     }
