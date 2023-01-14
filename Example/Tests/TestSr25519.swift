@@ -7,15 +7,8 @@ class TestSr25519: XCTestCase {
         .compactMap { _ in UUID().uuidString.data(using: .utf8) }
     
     func test() throws {
-        guard let seed = "0xcfdd8f2503e043e9884997c6afcccd3bb30184f7c504de359ce3e591d4f8d853".hex.decode() else {
-            XCTFail()
-            return
-        }
-        
-        guard let correctPublicKey = "0x003b6c9a114fb708a99b6fa6753e145f12cf62b9eba095d57a4237570e152f53".hex.decode() else {
-            XCTFail()
-            return
-        }
+        let seed = try "0xcfdd8f2503e043e9884997c6afcccd3bb30184f7c504de359ce3e591d4f8d853".hex.decode()
+        let correctPublicKey = try "0x003b6c9a114fb708a99b6fa6753e145f12cf62b9eba095d57a4237570e152f53".hex.decode()
         
         let privateKey = try seed.sr25519.loadPrivateKey()
         let publicKey = try privateKey.sr25519.publicKey()

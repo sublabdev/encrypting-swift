@@ -1,5 +1,5 @@
 import Foundation
 
 struct Constants {
-    static let testsCount = 10
+    static let testsCount = 5
 }

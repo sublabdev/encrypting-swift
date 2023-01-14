@@ -15,10 +15,7 @@ class TestEcdsa: XCTestCase {
     }
 
     private func testSignature(kind: EcdsaKind) throws {
-        guard let seed = "0x0637cff0bfebd949172774cbc4d9933e92b6a18eaffd835a79a776a0f6cf92e9".hex.decode() else {
-            XCTFail()
-            return
-        }
+        let seed = try "0x0637cff0bfebd949172774cbc4d9933e92b6a18eaffd835a79a776a0f6cf92e9".hex.decode()
         
         let privateKey = try seed.ecdsa(kind: kind).loadPrivateKey()
         let publicKey = try privateKey.ecdsa(kind: kind).publicKey()
