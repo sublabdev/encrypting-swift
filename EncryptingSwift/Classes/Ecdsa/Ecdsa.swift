@@ -6,6 +6,8 @@ private typealias Hasher = (Data) throws -> Data
 
 /// Handles ECDSA encryption
 class Ecdsa: SignatureEngine {
+    let name = "ecdsa"
+    
     enum Error: Swift.Error {
         case invalidSecretKey
         case invalidMessage
