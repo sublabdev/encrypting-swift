@@ -60,7 +60,7 @@ extension KeyPair {
         try signatureEngine(for: privateKey).sign(message: message)
     }
     
-    // The default verification implementation
+    /// The default verification implementation
     /// - Parameters:
     ///     - message: The message
     ///     - signature: 64 bytes signature
