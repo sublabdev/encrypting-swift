@@ -24,7 +24,7 @@ class SR25519: SignatureEngine {
         try keyPair().publicKey.raw
     }
     
-    // The default signing implementation for SR25519
+    /// The default signing implementation for SR25519
     /// - Parameters:
     ///     - message: The message that needs to be signed
     /// - Returns: The signature
