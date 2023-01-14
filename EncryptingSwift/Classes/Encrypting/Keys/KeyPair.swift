@@ -40,20 +40,20 @@ open class KeyPairFactory {
         try load(seedOrPrivateKey: mnemonic.toSeed(passphrase: passphrase))
     }
     
-    /// Generates a `KeyPair` from a phrase and a passphrase.
+    /// Generates a `KeyPair` from a seed phrase and a passphrase.
     /// Throws
     /// - Parameters:
-    ///     - phrase: A phrase
+    ///     - phrase: A seed phrase
     ///     - passphrase: A passphrase. The default value is an empty `String`
     /// - Returns: A `KeyPair` object
     public func generate(phrase: String, passphrase: String = "") throws -> KeyPair {
         try generate(from: DefaultMnemonic.from(phrase: phrase), passphrase: passphrase)
     }
     
-    /// Generates a `KeyPair` from words and a passphrase.
+    /// Generates a `KeyPair` from seed phrase words and a passphrase.
     /// Throws
     /// - Parameters:
-    ///     - words: Words used to generate the mnemonic
+    ///     - words: Seed phrase words used to generate the mnemonic
     ///     - passphrase: A passphrase
     /// - Returns: A `KeyPair` object
     public func generate(words: [String], passphrase: String = "") throws -> KeyPair {
