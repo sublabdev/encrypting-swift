@@ -1,6 +1,7 @@
 import Bip39
 import Foundation
 
+/// A default mnemonic
 public final class DefaultMnemonic: Mnemonic {
     
     public let words: [String]
@@ -19,7 +20,16 @@ public final class DefaultMnemonic: Mnemonic {
 }
 
 extension DefaultMnemonic {
-    public static func from(mnemonic: Bip39.Mnemonic, seedFactory: SeedFactory = SubstrateSeedFactory()) throws -> Mnemonic {
+    /// Generates a default mnemoninc using `Bip39`'s mnemonic and a seed factory to generate a seed from it.
+    /// Throws
+    /// - Parameters:
+    ///     - mnemonic: A `Bip39`'s mnemonic
+    ///     - seedFactory: Seed factory that is used to generate a seed from it
+    /// - Returns: A default mnemomic
+    public static func from(
+        mnemonic: Bip39.Mnemonic,
+        seedFactory: SeedFactory = SubstrateSeedFactory()
+    ) throws -> Mnemonic {
         try DefaultMnemonic(
             words: Bip39.Mnemonic.toMnemonic(mnemonic.entropy),
             entropy: Data(mnemonic.entropy),
@@ -27,10 +37,22 @@ extension DefaultMnemonic {
         )
     }
     
+    /// Generates a default mnemoninc from a phrase and a seed factory to generate a seed from it.
+    /// Throws
+    /// - Parameters:
+    ///     - phrase: A phrase used as words
+    ///     - seedFactory: Seed factory that is used to generate a seed from it
+    /// - Returns: A default mnemomic
     public static func from(phrase: String, seedFactory: SeedFactory = SubstrateSeedFactory()) throws -> Mnemonic {
         try from(words: phrase.split(separator: " ").map { String($0) }, seedFactory: seedFactory)
     }
     
+    /// Generates a default mnemoninc from words and a seed factory to generate a seed from it.
+    /// Throws
+    /// - Parameters:
+    ///     - words: Words used to generate the mnemonic
+    ///     - seedFactory: Seed factory that is used to generate a seed from it
+    /// - Returns: A default mnemomic
     public static func from(words: [String], seedFactory: SeedFactory = SubstrateSeedFactory()) throws -> Mnemonic {
         try DefaultMnemonic(
             words: words,
