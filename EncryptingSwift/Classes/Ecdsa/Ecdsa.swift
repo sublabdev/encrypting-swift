@@ -23,7 +23,7 @@ import secp256k1
 private typealias Hasher = (Data) throws -> Data
 
 /// Handles ECDSA encryption
-class Ecdsa: SignatureEngine {
+final class Ecdsa: SignatureEngine {
     let name = "ecdsa"
     
     enum Error: Swift.Error {

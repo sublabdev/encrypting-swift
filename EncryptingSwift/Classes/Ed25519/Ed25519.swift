@@ -20,7 +20,7 @@ import Foundation
 import ed25519swift
 
 /// Handles ED25519 encryption
-class Ed25519: SignatureEngine {
+final class Ed25519: SignatureEngine {
     let name = "ed25519"
     
     private let data: Data

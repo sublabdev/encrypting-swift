@@ -20,7 +20,7 @@ import Foundation
 import Sr25519
 
 /// Handles SR25519 encryption
-class SR25519: SignatureEngine {
+final class SR25519: SignatureEngine {
     let name = "sr25519"
     private let data: Data
 
