@@ -4,6 +4,8 @@ platform :ios, '13.0'
 
 target 'EncryptingSwift_Example' do
   pod 'EncryptingSwift', :path => '../'
+  pod 'CommonSwift', :git => 'https://github.com/sublabdev/common-swift.git', :branch => 'dev'
+  pod 'HashingSwift', :git => 'https://github.com/sublabdev/hashing-swift.git', :branch => 'dev'
 
   target 'EncryptingSwift_Tests' do
     inherit! :search_paths

@@ -16,27 +16,11 @@
  * 
  */
 
-//
-//  ViewController.swift
-//  EncryptingSwift
-//
-//  Created by TigranIsk on 11/23/2022.
-//  Copyright (c) 2022 TigranIsk. All rights reserved.
-//
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+extension UnsafeMutableRawBufferPointer {
+    // Returns a typed pointer to a memory bound to UInt8
+    var bufferPointer: UnsafeMutablePointer<UInt8> {
+        baseAddress!.assumingMemoryBound(to: UInt8.self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-

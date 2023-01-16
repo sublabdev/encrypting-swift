@@ -16,27 +16,13 @@
  * 
  */
 
-//
-//  ViewController.swift
-//  EncryptingSwift
-//
-//  Created by TigranIsk on 11/23/2022.
-//  Copyright (c) 2022 TigranIsk. All rights reserved.
-//
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+/// And interface for accessing the message signing functionality
+public protocol Signer {
+    /// The default signing interface
+    /// - Parameters:
+    ///     - message: The message that needs to be signed
+    /// - Returns: The signature
+    func sign(message: Data) throws -> Data
 }
-

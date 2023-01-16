@@ -1,16 +1,96 @@
 PODS:
-  - EncryptingSwift (0.1.0)
+  - Base58Swift (2.1.10):
+    - BigInt (~> 5.0.0)
+  - BigInt (5.0.0)
+  - Bip39.swift (0.1.1):
+    - UncommonCrypto (~> 0.1.0)
+  - Blake2 (0.1.2)
+  - CommonSwift (1.0.0):
+    - BigInt (~> 5.0.0)
+  - CryptoSwift (1.6.0)
+  - ed25519swift (1.2.8):
+    - CryptoSwift
+  - EncryptingSwift (1.0.0):
+    - Bip39.swift (~> 0.1.1)
+    - CommonSwift (~> 1.0.0)
+    - ed25519swift (~> 1.2.8)
+    - HashingSwift (~> 1.0.0)
+    - secp256k1.swift (~> 0.1.4)
+    - Sr25519 (~> 0.1.3)
+    - UncommonCrypto (~> 0.1.3)
+  - HashingSwift (1.0.0):
+    - Base58Swift (~> 2.1.10)
+    - Blake2 (~> 0.1.2)
+    - CommonSwift
+    - keccak.c (~> 0.1.3)
+    - xxHash-Swift (~> 1.1.1)
+  - keccak.c (0.1.3)
+  - secp256k1.swift (0.1.4)
+  - Sr25519 (0.1.3):
+    - Sr25519/Sr25519 (= 0.1.3)
+  - Sr25519/CSr25519 (0.1.3):
+    - UncommonCrypto (~> 0.1.0)
+  - Sr25519/Helpers (0.1.3):
+    - Sr25519/CSr25519
+  - Sr25519/Sr25519 (0.1.3):
+    - Sr25519/CSr25519
+    - Sr25519/Helpers
+  - UncommonCrypto (0.1.3)
+  - xxHash-Swift (1.1.1)
 
 DEPENDENCIES:
+  - CommonSwift (from `https://github.com/sublabdev/common-swift.git`, branch `dev`)
   - EncryptingSwift (from `../`)
+  - HashingSwift (from `https://github.com/sublabdev/hashing-swift.git`, branch `dev`)
+
+SPEC REPOS:
+  trunk:
+    - Base58Swift
+    - BigInt
+    - Bip39.swift
+    - Blake2
+    - CryptoSwift
+    - ed25519swift
+    - keccak.c
+    - secp256k1.swift
+    - Sr25519
+    - UncommonCrypto
+    - xxHash-Swift
 
 EXTERNAL SOURCES:
+  CommonSwift:
+    :branch: dev
+    :git: https://github.com/sublabdev/common-swift.git
   EncryptingSwift:
     :path: "../"
+  HashingSwift:
+    :branch: dev
+    :git: https://github.com/sublabdev/hashing-swift.git
+
+CHECKOUT OPTIONS:
+  CommonSwift:
+    :commit: 24cc1514dedb0755a86ae8b6752778a4ff54fb95
+    :git: https://github.com/sublabdev/common-swift.git
+  HashingSwift:
+    :commit: f03de80ae87ffa3dc13903afa1865868ff1015ab
+    :git: https://github.com/sublabdev/hashing-swift.git
 
 SPEC CHECKSUMS:
-  EncryptingSwift: fa4e8afcff88d35a3f7eca3c3b4ff95f7e900320
+  Base58Swift: 53d551f0b33d9478fa63b3445e453a772d6b31a7
+  BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
+  Bip39.swift: b1d6bf4084659232e711b3d3e4bf7df666f39974
+  Blake2: f33072b13349da1b8048a2bf26a3a24d4eac6dcc
+  CommonSwift: ad350f0e06c040e5cb660cd7154f947851c73fbd
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  ed25519swift: 32845b4d73fdd3598d6334972a62f463314de730
+  EncryptingSwift: ceaa2f0f36295835b8f1dc7c80e5c50d2dfe6c88
+  HashingSwift: d97c9d264e558e471b15d4c65773104c587a9b4c
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  Sr25519: 87a974e2d714113af55e1d7e5cef1b82864a57bd
+  UncommonCrypto: 8e6276bd3def28cdbd55966926c38c37ea1c9af5
+  xxHash-Swift: 13ebcbfc48658a5acf3777751e64b18c0f110d25
 
-PODFILE CHECKSUM: ae08716dad6ea45d3980de3d154b7bf4ac4a6443
+PODFILE CHECKSUM: 44f1de9fff37130314c674a1eb0521ca0421b097
 
 COCOAPODS: 1.11.3

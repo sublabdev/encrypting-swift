@@ -16,27 +16,17 @@
  * 
  */
 
-//
-//  ViewController.swift
-//  EncryptingSwift
-//
-//  Created by TigranIsk on 11/23/2022.
-//  Copyright (c) 2022 TigranIsk. All rights reserved.
-//
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+/// The base Signature engine that provides an interface for getting a private key;
+/// creating a public key; signing a message; and verifying a signature and a message
+public protocol SignatureEngine: Verifier, Signer {
+    var name: String { get }
+    
+    /// Loads a private key
+    /// - Returns: The private key
+    func loadPrivateKey() throws -> Data
+    /// Generates a public key
+    /// - Returns: A created public key
+    func publicKey() throws -> Data
 }
-

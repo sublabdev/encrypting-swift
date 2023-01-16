@@ -16,27 +16,15 @@
  * 
  */
 
-//
-//  ViewController.swift
-//  EncryptingSwift
-//
-//  Created by TigranIsk on 11/23/2022.
-//  Copyright (c) 2022 TigranIsk. All rights reserved.
-//
+import Bip39
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+public final class EthereumSeedFactory: SeedFactory {
+    public init() {}
+    
+    public func deriveSeed(mnemonic: Mnemonic, passphrase: String) throws -> Data {
+        Data(
+            try Bip39.Mnemonic(entropy: mnemonic.entropy.bytes).seed(password: passphrase)
+        )
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-

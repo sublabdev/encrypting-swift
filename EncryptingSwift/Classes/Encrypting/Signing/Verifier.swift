@@ -16,27 +16,14 @@
  * 
  */
 
-//
-//  ViewController.swift
-//  EncryptingSwift
-//
-//  Created by TigranIsk on 11/23/2022.
-//  Copyright (c) 2022 TigranIsk. All rights reserved.
-//
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+/// An interface for accessing a message and a signature verification functionality
+public protocol Verifier {
+    /// Verifies the provided message and signature
+    /// - Parameters:
+    ///     - message: The message
+    ///     - signature: 64 bytes signature
+    /// - Returns: A Bool value indicating whether the verification was successful or not
+    func verify(message: Data, signature: Data) throws -> Bool
 }
-
