@@ -11,13 +11,13 @@ PODS:
   - ed25519swift (1.2.8):
     - CryptoSwift
   - EncryptingSwift (1.0.0):
-    - Bip39.swift (~> 0.1.1)
-    - CommonSwift (~> 1.0.0)
-    - ed25519swift (~> 1.2.8)
-    - HashingSwift (~> 1.0.0)
-    - secp256k1.swift (~> 0.1.4)
-    - Sr25519 (~> 0.1.3)
-    - UncommonCrypto (~> 0.1.3)
+    - Bip39.swift (= 0.1.1)
+    - CommonSwift (= 1.0.0)
+    - ed25519swift (= 1.2.8)
+    - HashingSwift (= 1.0.0)
+    - secp256k1.swift (= 0.1.4)
+    - Sr25519 (= 0.1.3)
+    - UncommonCrypto (= 0.1.3)
   - HashingSwift (1.0.0):
     - Base58Swift (~> 2.1.10)
     - Blake2 (~> 0.1.2)
@@ -83,7 +83,7 @@ SPEC CHECKSUMS:
   CommonSwift: ad350f0e06c040e5cb660cd7154f947851c73fbd
   CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
   ed25519swift: 32845b4d73fdd3598d6334972a62f463314de730
-  EncryptingSwift: ceaa2f0f36295835b8f1dc7c80e5c50d2dfe6c88
+  EncryptingSwift: d6ea33bacc1593872ca998ef9f08c66221b0d9cd
   HashingSwift: d97c9d264e558e471b15d4c65773104c587a9b4c
   keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
@@ -93,4 +93,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 44f1de9fff37130314c674a1eb0521ca0421b097
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
